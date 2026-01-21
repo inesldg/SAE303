@@ -55,7 +55,7 @@ document.getElementById("appliquer").addEventListener("click", () => {
     const critere = critereInput.value;
 
     // On charge le json et on réupère ses données pour les stocker dans data
-    fetch('../json/data.json')
+    fetch('json/data.json')
         .then(res => res.json())
         .then(data => {
             console.log("Data chargée:", data);
@@ -186,7 +186,7 @@ const SVG_NS = "http://www.w3.org/2000/svg";
 
 // On récupère le fichier json, et on le transsforme en objet JS qu'on peut maintenant 
 // utiliser -> data contient tout le contenu du json
-fetch("../json/data.json")
+fetch("json/data.json")
     .then(res => res.json())
     .then(data => {
 
